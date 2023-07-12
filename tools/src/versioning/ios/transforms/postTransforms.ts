@@ -83,7 +83,7 @@ export function postTransforms(versionName: string): TransformPipeline {
         // e.g. `#include <react/debug/react_native_assert.h>`
         //   -> `#include <ABI49_0_0React/ABI49_0_0debug/ABI49_0_0React_native_assert.h>`
         //   -> `#include <ABI49_0_0React/debug/ABI49_0_0React_native_assert.h>`
-        paths: ['ReactCommon/react/', 'React/'],
+        paths: ['ReactCommon/cxxreact', 'ReactCommon/react/', 'React/'],
         replace: new RegExp(
           `(^(#include|#import) <${versionName}React)/${versionName}([^/\\n]+?)/(${versionName})?([^/\\n]+?\\.h>$)`,
           'gm'
