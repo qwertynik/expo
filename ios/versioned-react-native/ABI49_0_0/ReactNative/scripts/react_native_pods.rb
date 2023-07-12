@@ -138,7 +138,7 @@ def use_react_native_ABI49_0_0! (
   pod 'ABI49_0_0Yoga', :path => "#{prefix}/ReactCommon/yoga", :project_name => 'ABI49_0_0', :modular_headers => true
 
   # pod 'ABI49_0_0DoubleConversion', :podspec => "#{prefix}/third-party-podspecs/DoubleConversion.podspec"
-  # pod 'ABI49_0_0glog', :podspec => "#{prefix}/third-party-podspecs/glog.podspec"
+  # pod 'ABI49_0_0glog', :podspec => "#{prefix}/third-party-podspecs/glog.podspec", :modular_headers => true
   # pod 'ABI49_0_0boost', :podspec => "#{prefix}/third-party-podspecs/boost.podspec"
   # pod 'ABI49_0_0RCT-Folly', :podspec => "#{prefix}/third-party-podspecs/RCT-Folly.podspec", :modular_headers => true
 

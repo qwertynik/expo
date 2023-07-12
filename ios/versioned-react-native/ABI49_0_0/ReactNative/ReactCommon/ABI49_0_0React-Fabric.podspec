@@ -27,10 +27,11 @@ Pod::Spec.new do |s|
   s.source                 = { :path => "." }
   s.source_files           = "dummyFile.cpp"
   s.pod_target_xcconfig = { "USE_HEADERMAP" => "YES",
-                            "CLANG_CXX_LANGUAGE_STANDARD" => "c++17" }
+                            "CLANG_CXX_LANGUAGE_STANDARD" => "c++17",
+                            "DEFINES_MODULE" => "YES" }
 
   if ENV['USE_FRAMEWORKS']
-    s.header_mappings_dir     = './'
+    s.header_mappings_dir     = File.absolute_path('./')
     s.module_name             = 'ABI49_0_0React_Fabric'
   end
 
