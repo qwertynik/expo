@@ -12,7 +12,7 @@
 
 - Fixed route types generation on Windows not working. ([#23386](https://github.com/expo/expo/pull/23386) by [@gsporto](https://github.com/gsporto) and [@marklawlor](https://github.com/marklawlor))
 - Added improved error message for static metro when a package is missing. ([#23499](https://github.com/expo/expo/pull/23499) by [@EvanBacon](https://github.com/EvanBacon))
-
+- Prohibit dev client URLs containing `_` in protocol.
 ### 💡 Others
 
 ## 0.10.10 - 2023-07-07
