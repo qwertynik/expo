@@ -19,6 +19,10 @@ if (Platform.OS === 'android') {
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
+  React.useEffect(() => {
+    console.log('dupa');
+    console.log(JSON.stringify(globalThis.expo?.modules?.ExpoGoModule ?? null));
+  }, []);
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ReduxProvider store={Store}>
